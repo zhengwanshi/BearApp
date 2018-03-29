@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:orientation="vertical"
+             tools:context="com.example.bearapp.editprofile.EditProfileFragment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/avatar"
+                android:gravity="center_vertical"
+                android:minHeight="50dp"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_info_avatar"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="头像"
+                    android:textColor="@android:color/black"/>
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/avatar_img"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+            <com.example.bearapp.editprofile.ProfileEdit
+                android:id="@+id/nick_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <com.example.bearapp.editprofile.ProfileEdit
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <com.example.bearapp.editprofile.ProfileEdit
+                android:id="@+id/sign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <com.example.bearapp.editprofile.ProfileEdit
+                android:id="@+id/renzheng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <com.example.bearapp.editprofile.ProfileEdit
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#333" />
+            <com.example.bearapp.editprofile.ProfileTextView
+                android:id="@+id/id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <com.example.bearapp.editprofile.ProfileTextView
+                android:id="@+id/level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <com.example.bearapp.editprofile.ProfileTextView
+                android:id="@+id/get_nums"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <com.example.bearapp.editprofile.ProfileTextView
+                android:id="@+id/send_nums"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#333" />
+            <Button
+                android:id="@+id/complete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/btn_bkg_blue_rect_round"
+                android:text="完成"
+                android:textColor="@android:color/holo_blue_dark" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>
